@@ -402,7 +402,7 @@ label {
   padding: 97px 0 126px;
   background-size: cover;
   background-position: center;
-  background-image: url(../images/fon.svg);
+  background-image: url(images/fon.svg);
 }
 
 .subscription-wrapper {
@@ -661,7 +661,7 @@ label {
       height: 111px;
       background-size: cover;
       background-position: center;
-      background-image: url(../images/advertisement004.jpg);
+      background-image: url(images/advertisement004.jpg);
   }
 
   .img__big {
