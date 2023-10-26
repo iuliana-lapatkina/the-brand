@@ -83,6 +83,7 @@ label {
 }
 
 .mobile-menu__title {
+  text-transform: uppercase;
   display: block;
   margin: 24px 0 12px 0;
 
@@ -134,6 +135,7 @@ label {
 }
 
 .promo__title {
+  text-transform: uppercase;
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
@@ -142,6 +144,7 @@ label {
 }
 
 .promo__heading {
+  text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -195,6 +198,7 @@ label {
 }
 
 .sale__text {
+  text-transform: uppercase;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -204,6 +208,7 @@ label {
 }
 
 .sale__heading {
+  text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -310,6 +315,7 @@ label {
 }
 
 .product__heading {
+  text-transform: uppercase;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -453,6 +459,7 @@ label {
 }
 
 .input-email-title {
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 24px;
 }
