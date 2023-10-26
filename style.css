@@ -663,7 +663,7 @@ label {
   }
 
   .img__big {
-      display: none;
+      height: 100%;
   }
 
   .product-box__text {
