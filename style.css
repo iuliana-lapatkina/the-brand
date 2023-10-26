@@ -15,9 +15,21 @@ img {
   max-width: 100%;
 }
 
+label {
+  cursor: pointer;
+}
+
 .inner {
   margin: 0 auto;
   max-width: 1140px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.highlight {
+  color: #F16D7F;
 }
 
 /* Header */
@@ -46,10 +58,6 @@ img {
   gap: 33px;
 }
 
-label {
-  cursor: pointer;
-}
-
 #header__check {
   display: none;
 }
@@ -63,10 +71,8 @@ label {
   top: 75px;
   right: 5%;
   z-index: 2;
-
-  background: #fff;
-
   padding: 32px 74px 32px 32px;
+  background: #fff;
 }
 
 .mobile-menu__heading {
@@ -80,18 +86,15 @@ label {
   text-transform: uppercase;
   display: block;
   margin: 24px 0 12px 0;
-
   color: #F16D7F;
   font-size: 14px;
 }
 
 .mobile-menu__list {
   padding-left: 20px;
-
   list-style: none;
   display: grid;
   gap: 11px;
-
   color: #6F6E6E;
   font-size: 14px;
 }
@@ -138,6 +141,11 @@ label {
   font-size: 32px;
   line-height: 38px;
   color: #222222;
+}
+
+.promo__img img {
+  height: 100%;
+  margin-bottom: -3px;
 }
 
 /* Sale */
@@ -221,22 +229,21 @@ label {
 }
 
 .product-box__text {
+  margin-top: 6px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  margin-top: 6px;
   color: #9F9F9F;
 }
 
 .product-box__content {
-  margin-top: 48px;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, 360px);
   justify-content: center;
   gap: 30px;
+  margin-top: 48px;
 }
 
 .product__img {
@@ -245,19 +252,19 @@ label {
 }
 
 .product-picturebox {
+  position: relative;
   width: 100%;
   height: 420px;
-  position: relative;
 }
 
 .product-itemHover {
   position: absolute;
+  cursor: pointer;
   width: 100%;
   height: 100%;
   background: rgba(58, 56, 56, 0.86);
   z-index: 1;
   opacity: 0;
-  cursor: pointer;
 }
 
 .product-itemHover:hover {
@@ -292,15 +299,13 @@ label {
 }
 
 .product__content {
-  background: #F8F8F8;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 16px;
-
   padding: 24px 16px;
+  background: #F8F8F8;
 }
 
 .product__heading {
@@ -330,22 +335,19 @@ label {
 
 .product__button {
   text-align: center;
-  
-  margin: 48.5px 0 0;
+  margin: 48x 0 0;
 }
 
-.button {
-  padding: 14.5px 38.5px 13.5px;
+.product__button .button {
+  cursor: pointer;
+  padding: 15px 39px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #F26376;
-
   background-color: white;
   border: 1px solid #FF6A6A;
-
-  cursor: pointer;
 }
 
 .button:hover {
@@ -422,10 +424,6 @@ label {
   color: #222224;
 }
 
-.figure-text-highlight {
-  font-style: italic;
-}
-
 .input-email {
   display: grid;
   justify-items: center;
@@ -486,6 +484,7 @@ label {
   cursor: pointer;
 }
 
+/* Footer */
 .footer {
   padding: 24px 0;
   background: #222224;
@@ -508,16 +507,15 @@ label {
 
 .footer-items {
   display: flex;
-  gap: 7.29px;
+  gap: 10px;
 }
 
 .footer-item {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 32px;
-  height: 32px;
+  width: 33px;
+  height: 33px;
   background-color: white;
 }
 
