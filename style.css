@@ -405,7 +405,6 @@ label {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  gap: 223.26px;
 }
 
 .staff {
@@ -527,14 +526,17 @@ label {
   
 }
 
-
-@media (max-width: 768px),(max-width: 1024px) {
-  .header__left {
-      margin-left: 32px;
+@media (max-width: 1140px) {
+  .inner {
+    margin: 0 16px;
   }
 
-  .header__right {
-      margin-right: 32px;
+  .header .inner {
+    margin: 0 26px;
+  }
+
+  .mobile-menu {
+    right: 0;
   }
 
   .promo__title {
@@ -556,17 +558,26 @@ label {
       gap: 19px;
   }
 
-  .product-box__content {
-      gap: 16px;
-      padding: 0 16px;
+  .sale-wrapper {
+    gap: 10px;
   }
-  
+
+  .product-box__content {
+    grid-template-columns: auto auto;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .product-picturebox {
+    margin-bottom: -4px;
+    height: fit-content;
+  }
+
   .product__button {
       margin: 32.98px 0 71.02px;
   }
 
   .subscription {
-      min-height: 693px;
       flex-direction: column;
       justify-content: space-evenly;
       gap: 50px;
@@ -576,15 +587,15 @@ label {
   .advantages {
       display: grid;
       justify-content: center;
-      padding-left: 20px;
+      padding: 60px 0;
+  }
+
+  .advantages-wrapper {
+    flex-direction: column;
   }
 
   .figure-text {
       font-size: 16px;
-  }
-
-  .footer {
-      padding: 0 40px 0 60px;
   }
 }
 
@@ -594,13 +605,32 @@ label {
   }
 }
 
-@media (max-width: 425px),(max-width: 375px),(max-width: 320px) {
+@media (max-width: 768px) {
+  .inner {
+    margin: 0 16px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .inner {
+    margin: 0 10px;
+  }
+
+  .sale-wrapper {
+    display: block;
+  }
+
   .header__link-site {
       display: none;
   }
   
   .promo {
       padding: 148px 0;
+  }
+
+  .promo-wrapper {
+    display: block;
   }
 
   .promo__img {
@@ -613,6 +643,11 @@ label {
 
   .promo__heading {
       font-size: 20px;
+  }
+
+  .promo__content {
+    padding-left: initial;
+    flex-direction: row;
   }
 
   .sale {
@@ -636,8 +671,8 @@ label {
       margin-top: 0;
   }
 
-  .subscription {
-      padding-left: 20px;
+  .product-box__content {
+    grid-template-columns: initial;
   }
 
   .input-email-text {
@@ -648,11 +683,22 @@ label {
       font-size: 22px;
   }
 
+  .advantages {
+    padding: 81px 0;
+  }
+
+  .subscription {
+    padding: 67px 0 100px;
+  }
+
+  .subscription-wrapper {
+    gap: 54px;
+  }
+
   .input-email-submit-subscribe {
       width: 150px;
   }
 
-  /* Footer */
   .footer-wrapper {
     display: flex;
     justify-content: center;
@@ -667,6 +713,9 @@ label {
 }
 
 @media (max-width: 320px) {
+  .header .inner {
+    padding: 0 20px;
+  }
 
   .header__left {
       gap: 20px;
