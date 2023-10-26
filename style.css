@@ -17,7 +17,7 @@ img {
 
 .inner {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1140px;
 }
 
 /* Header */
@@ -404,7 +404,7 @@ label {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 223.26px;
 }
