@@ -1,0 +1,48 @@
+.footer {
+  padding: 24px 0;
+  background: $color-dark;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $tablet) {
+      justify-content: center;
+      flex-direction: column-reverse;
+      gap: 14px;
+    }
+  }
+  
+  &-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-light;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
+  }
+  
+  &-items {
+    display: flex;
+    gap: 10px;
+  }
+  
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    background-color: $color-light;
+  }
+  
+  &-item:hover {
+    background-color: $color-accent;
+  }
+}
+

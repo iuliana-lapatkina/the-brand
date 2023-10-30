@@ -1,0 +1,148 @@
+.product-information {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 56px 292px 64px;
+    min-height: 642px;
+    transform: translate(0, -50px);
+    background-color: $color-light;
+    border: 1px solid $color-light-border;
+  }
+
+  &__description {
+    position: relative;
+    padding-bottom: 64px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 50%;
+      left: 25%;
+      border-top: 1px solid $color-light-border;
+    }
+  }
+
+  &__collection {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: $color-accent;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: top;
+      width: 10%;
+      left: 45%;
+      border-top: 3px solid $color-accent;
+    }
+  }
+
+  &__title {
+    padding-top: 12px;
+    padding-bottom: 48px;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+    width: 618px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #5E5E5E;
+  }
+
+  &__price {
+    font-size: 24px;
+    font-weight: 300;
+    color: $color-accent;
+  }
+
+  &__details {
+    margin-top: 64px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  &__details-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 48px;
+  }
+
+  &__add-button {
+    @include add-to-card-button;
+    display: flex;
+    gap: 23px;
+    align-items: center;
+    margin: 0 auto;
+    width: 212px;
+    font-size: 16px;
+  }
+
+  .product-information__details-li {
+    cursor: pointer;
+
+    summary {
+      position: relative;
+    }
+
+    summary:before {
+      position: absolute;
+      display: block;
+      content: '';
+      right: -20px;
+      top: 36%;
+      width: 2px;
+      height: 10px;
+      background-color: $color-dark;
+      transform: rotate(50deg);
+    }
+
+    summary:after {
+      position: absolute;
+      display: block;
+      content: '';
+      right: -14px;
+      top: 36%;
+      width: 2px;
+      height: 10px;
+      background-color: $color-dark;
+      transform: rotate(-50deg);
+    }
+  }
+
+  .product-information__details-li[open] {
+    summary:before {
+      position: absolute;
+      display: block;
+      content: '';
+      right: -20px;
+      top: 36%;
+      width: 2px;
+      height: 10px;
+      background-color: $color-dark;
+      transform: rotate(-50deg);
+    }
+
+    summary:after {
+      position: absolute;
+      display: block;
+      content: '';
+      right: -14px;
+      top: 36%;
+      width: 2px;
+      height: 10px;
+      background-color: $color-dark;
+      transform: rotate(50deg);
+    }
+  }
+}

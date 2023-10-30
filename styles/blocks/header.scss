@@ -1,0 +1,59 @@
+.header {
+  padding: 16px 26px;
+  background: $color-dark;
+
+  @media (max-width: $mobile) {
+    padding: 10px 14px;
+  }
+
+  & .container {
+    @media (max-width: $desktop) {
+      margin: 0 26px;
+    }
+
+    @media (max-width: $tablet) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    align-items: baseline;
+    gap: 41px;
+
+    @media (max-width: $mobile) {
+      gap: 20px;
+    }
+  }
+  
+  &__right {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 33px;
+    }
+  }
+
+  &__link-site {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}
+
+#header__check {
+  display: none;
+}
+
+#header__check:checked ~ .mobile-menu {
+  display: none;
+}

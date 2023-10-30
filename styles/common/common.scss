@@ -1,0 +1,60 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:active,
+a:hover,
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @media (max-width: 1140px) {
+    margin: 0 16px;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+.highlight {
+  color: $color-accent;
+}
